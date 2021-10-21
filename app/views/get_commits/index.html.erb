@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Get Commits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @get_commits.each do |get_commit| %>
+      <tr>
+        <td><%= link_to 'Show', get_commit %></td>
+        <td><%= link_to 'Edit', edit_get_commit_path(get_commit) %></td>
+        <td><%= link_to 'Destroy', get_commit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Get Commit', new_get_commit_path %>

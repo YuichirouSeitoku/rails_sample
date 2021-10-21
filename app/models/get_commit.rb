@@ -1,0 +1,2 @@
+class GetCommit < ApplicationRecord
+end
